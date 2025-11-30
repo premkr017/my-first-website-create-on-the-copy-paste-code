@@ -1,0 +1,10 @@
+This website is a responsive landing page built using HTML and Tailwind CSS. It features the following sections:
+
+1. Header: Contains a logo, navigation links, and a button.
+2. Hero Section: Includes a title, description, and call-to-action buttons with an image.
+3. Pricing Section: Displays four pricing plans (Start, Pro, Business, Special) with features and buttons.
+4. Stats Section: Shows user statistics like number of users, subscribers, downloads, and products, along with an image.
+5. Team Section: Introduces team members with photos, names, roles, descriptions, and social links.
+6. Footer: Includes categories, a subscription form, and social media links.
+
+The site uses placeholder text and dummy images from dummyimage.com. It is designed to be mobile-friendly and visually appealing with Tailwind's utility classes.
