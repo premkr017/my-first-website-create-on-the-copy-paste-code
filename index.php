@@ -1,3 +1,13 @@
+<?php
+ session_start();
+
+ if (isset($_SESSION['message'])) {
+    echo "<script>alert('{$_SESSION['message']}');</script>";
+    unset($_SESSION['message']); // Clear message after showing
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,8 +30,8 @@
         </h1>
         <p class="mb-8 leading-relaxed">Prem Software Solution Pvt Ltd ek professional Website Designing aur Software Development company hai jo modern, fast aur fully responsive websites banati hai. Hum customized software, business websites, e-commerce sites, portfolio sites, billing software, school management software aur customized IT solutions provide karte hain. High-quality design, clean coding, fast performance, mobile-friendly layout aur secure development humari specialty hai. Client ki need ke hisaab se end-to-end service — planning, designing, development, hosting aur maintenance — sab kuch ek hi jagah par available. Professional, reliable aur affordable IT solutions ke liye Prem Software Solution Pvt Ltd best choice hai.</p>
         <div class="flex justify-center">
-          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="software.php">Website Designing</button>
+          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"><a href="development.php">Software Development</button>
         </div>
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -40,8 +50,8 @@
         </h1>
         <p class="mb-8 leading-relaxed">Prem Software Solution Pvt Ltd ek trusted IT company hai jise Prem Enterprise Pvt Ltd dwara officially approve kiya gaya hai. Yeh company high-quality website designing, software development aur custom IT solutions provide karti hai. Modern design, secure coding, fast performance aur fully responsive websites banana iski special strength hai. Business websites, e-commerce platforms, billing software, school management systems aur custom applications—sab kuch professional standard ke saath deliver kiya jata hai. Reliable service, affordable pricing aur excellent support ki wajah se yeh ek truly awesome aur highly recommended company mani jati hai.</p>
         <div class="flex justify-center">
-          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="software.php">Website Designing</button>
+          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"><a href="development.php">Software Development</button>
         </div>
       </div>
     </div>
@@ -52,8 +62,8 @@
         <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Pricing</h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
         <div class="flex mx-auto border-2 border-indigo-500 rounded overflow-hidden mt-6">
-          <button class="py-1 px-4 bg-indigo-500 text-white focus:outline-none">Monthly</button>
-          <button class="py-1 px-4 focus:outline-none">Annually</button>
+          <button class="py-1 px-4 bg-indigo-500 text-white focus:outline-none">Annually</button>
+          <!-- <button class="py-1 px-4 focus:outline-none">Annually</button> -->
         </div>
       </div>
       <div class="flex flex-wrap -m-4">
